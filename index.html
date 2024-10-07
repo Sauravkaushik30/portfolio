@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saurav Kaushik - ML Engineer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .section {
+      width: 100%;
+      max-width: 900px;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    h1, h2 {
+      color: #4caf50;
+      margin: 0;
+    }
+    .social-links a {
+      margin: 0 15px;
+      color: #4caf50;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    .section img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    .projects, .experience, .skills, .achievements, .languages {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    .projects div, .experience div {
+      background-color: #1e1e1e;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    .skills .skill-bar {
+      background: #333;
+      border-radius: 10px;
+      margin: 8px 0;
+    }
+    .skills .skill-bar .progress {
+      background: #4caf50;
+      padding: 8px;
+      border-radius: 10px;
+    }
+    .projects a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+    #clock {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="section" id="about">
+    <img src="profile.jpg.jpg" alt="Profile Picture">
+    <h1>Saurav Kaushik</h1>
+    <p>Machine Learning Engineer</p>
+    <div class="social-links">
+      <a href="https://linkedin.com/in/sauravkaushik101">LinkedIn</a>
+      <a href="https://github.com/Sauravkaushik30">GitHub</a>
+    </div>
+    <div id="clock"></div> <!-- Live Clock -->
+  </div>
+
+  <div class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <p>1. Fraud Detection System Using Machine Learning</p>
+      <p>2. Fincube AI</p>
+      <p>3. Janrakshak AI</p>
+      <p>4. AI-Powered Trading Anomaly Detection Platform</p>
+      <p>5. <a href="https://github.com/Sauravkaushik30" target="_blank">More...</a></p>
+    </div>
+  </div>
+
+  <div class="section" id="experience">
+    <h2>Experience</h2>
+    <div class="experience">
+      <div>
+        <h3>AI Intern - JBM Group</h3>
+        <p>Managed automated systems, reduced errors by 30%, and integrated real-time data from 30+ machines into dashboards.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-bar"><div class="progress" style="width: 90%">Python</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 80%">Machine Learning</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 80%">Deep Learning</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 75%">Natural Language Processing</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 70%">Data Visualization</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 70%">Data Analysis</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 65%">SEO/SEM</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 65%">Prompt Engineering</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 60%">TensorFlow</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 60%">Flask</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 60%">Jupyter Notebook</div></div>
+      <div class="skill-bar"><div class="progress" style="width: 50%">Scikit-Learn</div></div>
+    </div>
+  </div>
+
+  <div class="section" id="languages">
+    <h2>Languages</h2>
+    <ul>
+      <li>Hindi</li>
+      <li>English</li>
+      <li>German</li>
+    </ul>
+  </div>
+
+  <div class="section" id="achievements">
+    <h2>Achievements</h2>
+    <ul class="achievements">
+      <li>Won a National Medal in Hindi Theatre representing my university.</li>
+      <li>Among the top 15% selected to participate in the National Level Hackathon organized by DTU.</li>
+      <li>Led my team to win a position in the Science Project Competition organized by SGT University.</li>
+      <li>Led my team to secure 1st position in the Science Project Competition organized by NCU.</li>
+      <li>Won a State Medal in Taekwondo.</li>
+    </ul>
+  </div>
+
+  <script>
+    // Live clock function
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = `Current Time: ${hours}:${minutes}:${seconds}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call to display clock immediately
+  </script>
+</body>
+</html>
